@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+
+  api:
+    build: ./api
+    ports:
+     - "3000:3000"
+    volumes:
+      - ./api/src:/usr/src/app/src
+
+  ang:
+    build: ./ang
+    ports:
+     - "4200:4200"
+     - "49153:49153"
+    volumes:
+      - ./ang/src:/usr/src/app/src
+      - ./ang/dist/ang:/usr/src/app/dist/ang
+    depends_on:
+     - api
