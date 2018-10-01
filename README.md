@@ -31,8 +31,8 @@ docker-compose exec ang npm run dist
 ## ouvrir un server depuis votre répertoire build :
 https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb/related
 
-- Lancez l'application (en haut à gauche)
-- une fenêtre 200 OK s'ouvre
+- Lancez l'application (en haut à gauche) => une fenêtre 200 OK s'ouvre
+- Sélection le répertoire /ang/dist/ang de votre projet
 - Paramétrez le port avec 1234 (dans la fenêtre qui s'ouvre)
 - Fermez la fenêtre et relancez la
 
